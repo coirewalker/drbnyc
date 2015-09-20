@@ -1,8 +1,24 @@
-.divider-bg-4 { 
-	background-image: url('baby-hand.jpg'); 
-	opacity: .4;
+#testimonials {
+	h1, p {
+		color: black;
+	}
 }
 
-#testimonials h1 {
-	color: #000;
+.divider-bg-4 { 
+	// background-image: url('baby-hand.jpg'); 
+	// opacity: .1;
+}
+
+.test-quote {
+	padding-top: 50px;
+}
+
+.healthgrades {
+	ul {
+		padding-left: 0;
+	}
+	li {
+		display: inline-block;
+		list-style: none;
+	}
 }

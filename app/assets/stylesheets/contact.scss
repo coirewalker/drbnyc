@@ -1,0 +1,25 @@
+// #contact {
+// 	padding-top: 5%;
+// 	padding-bottom: 5%;
+// }
+
+.address {
+	ul {
+		padding-left: 0;
+	}
+	li {
+		list-style: none;	
+	}	
+}
+
+#map { 
+    background-image: url('gmap.jpg');
+    height: 350px;
+    z-index: 9999;
+    border-top: 2px solid #9d9d9d;
+    border-bottom: 2px solid #9d9d9d;
+} 
+
+#map {
+
+}
