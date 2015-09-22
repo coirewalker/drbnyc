@@ -1,7 +1,6 @@
-// #contact {
-// 	padding-top: 5%;
-// 	padding-bottom: 5%;
-// }
+#contact.container {
+	padding-bottom: 5%;
+}
 
 .address {
 	ul {
@@ -14,12 +13,8 @@
 
 #map { 
     background-image: url('gmap.jpg');
-    height: 350px;
+    height: 300px;
     z-index: 9999;
     border-top: 2px solid #9d9d9d;
     border-bottom: 2px solid #9d9d9d;
 } 
-
-#map {
-
-}

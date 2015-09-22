@@ -42,22 +42,22 @@
         <hr>
         <br>
         <br> 
-        <div class="col-lg-3  callout">
+        <div class="col-xs-12 col-sm-6 col-md-3 callout">
             <i class="fa fa-heartbeat fa-3x"></i>
             <h2>Health</h2> 
             <p>That tall drink of water with the silver spoon up his ass. you measure yourself by the people who measure themselves by you.</p> 
         </div>	
-        <div class="col-lg-3  callout">
+        <div class="col-xs-12 col-sm-6 col-md-3 callout">
             <i class="fa fa-stethoscope fa-3x"></i>
             <h2>Wellbeing</h2>
             <p>Well, what is it today? more spelunking? mister wayne, if you don't want to tell me exactly what you're doing, when i'm asked.</p>
         </div>	
-        <div class="col-lg-3  callout">
+        <div class="col-xs-12 col-sm-6 col-md-3 callout">
             <i class="fa fa-medkit fa-3x"></i>
             <h2>Exams</h2>
             <p>Your entrance was good, his was better. we got no food we got no money and our pets heads are falling off! Some crazy ipsum right here, I tell ya!</p>
         </div>    
-        <div class="col-lg-3  callout">
+        <div class="col-xs-12 col-sm-6 col-md-3 callout">
             <i class="fa fa-hospital-o fa-3x"></i>
             <h2>Childbirth</h2>
             <p>Brain freeze. i just heard about evans new position,good luck to you evan backstabber, bastard, i mean baxter.</p>
@@ -80,22 +80,26 @@
         <hr>
         <br>
         <br> 
-        <div class="row  center"><!-- bio pics -->
-            <div class="col-lg-6  center">
-                <img class="img  img-circle  team-member" src="assets/images/john.jpg" height="155px" width="155px" alt="">
+        <!-- <div class="row  center"> -->
+            <div class="col-xs-12 col-md-6 center">
+                <%= image_tag("john.jpg", :alt => "john", :class => "team-member") %>
                 <br>
                 <h4><b>John Brennan</b></h4>
 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas eum excepturi possimus, doloremque eaque laudantium accusamus beatae amet unde, recusandae eligendi ab labore at dolorem tempora! Officia, dolore, qui.
+                </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas eum excepturi possimus, doloremque eaque laudantium accusamus beatae amet unde, recusandae eligendi ab labore at dolorem tempora! Officia, dolore, qui.</p> 
             </div>
 
-            <div class="col-lg-6  center">
-                <img class="img  img-circle  team-member" src="assets/img/team-2%20.jpg" height="155px" width="155px" alt="">
+            <div class="col-xs-12 col-md-6 center">
+                <%= image_tag("jais.jpg", :alt => "jais", :class => "team-member") %>
                 <br>
                 <h4><b>Jais Brennan</b></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sunt culpa rem, officia fuga facere quod, nulla ut ad impedit tempora nemo placeat delectus adipisci explicabo in atque, iste est.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sunt culpa rem, officia fuga facere quod, nulla ut ad impedit tempora nemo placeat delectus adipisci explicabo in atque, iste est.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quas eum excepturi possimus, doloremque eaque laudantium accusamus beatae amet unde, recusandae eligendi ab labore at dolorem tempora! Officia, dolore, qui.</p>
             </div>
-        </div><!-- end bio pics -->      
+        <!-- </div> -->
     </div>
 </div><!-- about section ends -->
 	
@@ -107,17 +111,17 @@
         <div class="row">
             <h1>Testimonials</h1>
             <hr>
-            <div class="col-lg-12 center test-quote">
+            <div class="col-xs-12 center test-quote">
                 <p>Dr. Brennan is my FAVORITE doctor. Period. I have been a patient for close to two decades.  Dr. Brennan has an excellent bedside manner --consistently courteous and professional. He is highly skilled and respected, as he has trained many other doctors and is a board certified formerly LICH affiliated doctor. He has been my primary care physician as well as my ob/gyn doctor.  He deserves more vacation as he is a workaholic, and is relentlessly willing to serve his patients.  He is blessed and has been a blessing to me many times.  Thank you Dr. Brennan!</p>
                 <p>Crystal P. - Yelp</p>
             </div>
             <br>
-            <div class="col-lg-12 center test-quote">
+            <div class="col-xs-12 center test-quote">
                 <p>Dr. Brennan and his wife, Jayce [sic], were absolutely amazing during my pregnancy and during and after the delivery of my baby. They are practical people who practice traditional medicine, with good sense, and both of them have a great sense of humor. They took time to listen to all our concerns and answered all our questions (and we had a lot as first-time parents).</p>
                 <p>User - Park Slope Parents</p>
             </div>
             <br>
-            <div class=" col-lg-12 center test-quote healthgrades">
+            <div class=" col-xs-12 center test-quote healthgrades">
                 <ul>
                     <li><i class="fa fa-star icon-2x"></i></li> 
                     <li><i class="fa fa-star icon-2x"></i></li>
@@ -133,22 +137,24 @@
 
 
 
-<div id="contact" class="container center">
+<div id="contact" class="col-xs-12 container center">
     <h1>Say Hello!</h1>
     <hr>
     <div class="address">
         <ul>
-            <li>153 Clinton St</li>
+            <li>220 Pacific Street </li>
             <li>Brooklyn, NY 11201</li>
             <li>Phone: (718) 222-3636</li>
         </ul>
     </div>
+    <br>       
+    <h3><a href="mailto:info@drb.nyc?Subject=Info%20Request">info@drb.nyc</a></h3>
 </div>
 
 
 
 <!-- map image -->
-<section id="map" class="divider    q center" name="contact"></section>
+<section id="map" class="divider center" name="contact"></section>
 
 
 

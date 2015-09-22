@@ -164,6 +164,10 @@ a:before, a:after {
 
 
 /* ========== Mixed ========== */
+
+.col-xs-12 {
+    padding-left: 30px;
+}
 .col-md-4 {
     padding-bottom: 20px;
 }
@@ -196,11 +200,6 @@ a:before, a:after {
 .btn {
     padding: 10px 14px;
     border-radius: 2px;
-}
-
-.team-member {
-    padding: 3px;
-    border: 1px solid #d0d0d0;
 }
 
 
