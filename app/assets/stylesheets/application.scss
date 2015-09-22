@@ -10,7 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
-
  */
 
 @import "bootstrap-sprockets";
@@ -26,9 +25,6 @@
 @import 'animate';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
-@import 'icomoon';
-
-
 
 
 
@@ -67,15 +63,15 @@ hr {
     height: 1px;
 }
 
-    hr:before {
-        content: " ";
-        position: absolute;
-        top: 0;
-        left: 40%;
-        width: 20%;
-        height: 1px;
-        background: #eee;
-    }
+hr:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 20%;
+    height: 1px;
+    background: #eee;
+}
 
 img {
     vertical-align: middle;
@@ -85,9 +81,9 @@ a img {
     background: #fff;
 }
 
-.odd a img {
-    background: #f5f5f5;
-}
+// .odd a img {
+//     background: #f5f5f5;
+// }
 
 textarea {
     resize: vertical;
@@ -108,7 +104,7 @@ textarea {
 
 
 
-/* ========== Typography ========== */
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -139,11 +135,10 @@ em {
 
 
 
-/* ========== Links ========== */
+/* Links */
 a {
     word-wrap: break-word;
-    color: #3276B1;
-
+    color: #777;
     -webkit-transition: color 0.2s ease-in, background 0.2s ease-in;
        -moz-transition: color 0.2s ease-in, background 0.2s ease-in;
             transition: color 0.2s ease-in, background 0.2s ease-in;
@@ -151,7 +146,7 @@ a {
 
 a:hover, a:focus {
     text-decoration: none;
-    color: #3e89c8;
+    color: #3276B1;
     outline: 0;
 }
 
@@ -159,22 +154,6 @@ a:before, a:after {
     -webkit-transition: color 0.2s ease-in, background 0.2s ease-in;
        -moz-transition: color 0.2s ease-in, background 0.2s ease-in;
             transition: color 0.2s ease-in, background 0.2s ease-in;
-}
-
-
-
-/* ========== Mixed ========== */
-
-.col-xs-12 {
-    padding-left: 30px;
-}
-.col-md-4 {
-    padding-bottom: 20px;
-}
-
-.row {
-    margin-right: 0px;
-    margin-left: -15px;
 }
 
 .modal-header {
@@ -189,14 +168,6 @@ a:before, a:after {
     margin: 0;
 }
 
-.close {
-    font-size: 34px;
-}
-
-.modal-content {
-    border-radius: 2px;
-}
-
 .btn {
     padding: 10px 14px;
     border-radius: 2px;
@@ -205,22 +176,29 @@ a:before, a:after {
 
 
 
-/* ========== Dividers ========== */
-
-#about, #services, #testimonials, #contact {
-    padding-top: 5%;
-    padding-bottom: 8%;
+/* Containers + Bootstrap overrides */
+.col-xs-12 {
+    padding-left: 15px;
+}
+.col-md-4 {
+    padding-bottom: 20px;
 }
 
+.row {
+    margin-right: 0px;
+    margin-left: -15px;
+}
+#about, #services, #testimonials, #contact {
+    padding-top: 5%;
+    padding-bottom: 0;
+}
 
-
-.divider { /* It is how single divider look's */
+.divider {     
     width: 100%;
     padding: 35px 0 70px 0;
     max-height: 500px;
     display: table;
     background-position: center center;
-    /*background-attachment: fixed;*/
     z-index: 999;
 
     -webkit-background-size: 100%;
@@ -244,25 +222,65 @@ a:before, a:after {
 
 .divider p {
     color: #f4f4f4;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
 
-/* ========== Media Queries ========== */
-@media screen and (max-width:1050px), screen and (max-device-width:1050px){
-	body .header{ background-attachment: scroll; }
+
+/* Media Queries */
+@media screen and (max-width:1050px), screen and (max-width:1050px){
+	body .header{ background-attachment: scroll; 
+    }
 }
 
-@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
-	.header{ background-attachment: scroll; }
+@media only screen and (min-width:768px) and (max-width : 1024px) and (orientation : portrait) {
+	.header{ background-attachment: scroll; 
+    }
 }
 
-@media screen and (max-width:769px) {
-	.header-wrap h1 { font-size: 72px; }
+/* iPad */
+@media screen and (max-width:768px) {
+    h1, p {
+        padding-left: 2%;
+    }
+    #about, #services, #testimonials, #contact {
+        padding-top: 3%;
+        padding-bottom: 4%;
+    }
+	.header-wrap h1 { 
+        font-size: 72px;
+        line-height: 72px;
+
+    }
     
-	.header-wrap p {
+	.header-wrap h2 {
 		font-size: 32px;
 		line-height: 34px;
 	}
+    .header-wrap h3 {
+        margin-top: 0;
+    }
 }
+
+/* iPhone 6 */
+@media screen and (max-width: 375px) {
+    .header-wrap h1 {
+        font-size: 50px;
+
+    }
+    .header-wrap h2 {
+        font-size: 20px;
+    }
+    .header-wrap h3 {
+        font-size: 15px;
+    }
+}
+
+/* iPhone 5 */
+@media screen and (max-width: 320px) {
+    #map {
+
+    }
+}
+
