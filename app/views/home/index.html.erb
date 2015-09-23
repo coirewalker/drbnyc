@@ -20,17 +20,19 @@
             </div>
         </div>
     </div>
-</div><!-- navigation ends -->
+</div><!-- /#navbar-main -->
 
 
 
-<div class="header-wrap center" id="home" name="home">
+
+<div  id="home" class="header-wrap center" name="home">
     <header class="clearfix">
         <h1 class="animated fadeInUp">John Brennan</h1>
         <h2 class="animated fadeInUp">Obstetrician</h2>
         <h3 class="animated fadeInUp">Brooklyn & NYC</h3>
     </header>	    
-</div><!-- header ends -->
+</div><!-- /.header-wrap -->
+
 
 
 
@@ -72,8 +74,7 @@
     
 
 
-
-<div class="container" id="about" name="about">
+<div id="about" class="container" name="about">
     <div class="row">
         <br>
         <br>
@@ -101,39 +102,38 @@
             </div>
         <!-- </div> -->
     </div>
-</div><!-- about section ends -->
+</div><!-- /#about -->
 	
 
 
 
-<section class="divider center">
-    <div id="testimonials" class="container">
-        <div class="row">
-            <h1>Testimonials</h1>
-            <hr>
-            <div class="col-xs-12 center test-quote">
-                <p>Dr. Brennan is my FAVORITE doctor. Period. I have been a patient for close to two decades.  Dr. Brennan has an excellent bedside manner --consistently courteous and professional. He is highly skilled and respected, as he has trained many other doctors and is a board certified formerly LICH affiliated doctor. He has been my primary care physician as well as my ob/gyn doctor.  He deserves more vacation as he is a workaholic, and is relentlessly willing to serve his patients.  He is blessed and has been a blessing to me many times.  Thank you Dr. Brennan!</p>
-                <p>Crystal P. - Yelp</p>
-            </div>
-            <br>
-            <div class="col-xs-12 center test-quote">
-                <p>Dr. Brennan and his wife, Jayce [sic], were absolutely amazing during my pregnancy and during and after the delivery of my baby. They are practical people who practice traditional medicine, with good sense, and both of them have a great sense of humor. They took time to listen to all our concerns and answered all our questions (and we had a lot as first-time parents).</p>
-                <p>User - Park Slope Parents</p>
-            </div>
-            <br>
-            <div class=" col-xs-12 center test-quote healthgrades">
-                <ul>
-                    <li><i class="fa fa-star fa-2x"></i></li> 
-                    <li><i class="fa fa-star fa-2x"></i></li>
-                    <li><i class="fa fa-star fa-2x"></i></li>
-                    <li><i class="fa fa-star fa-2x"></i></li>
-                    <li><i class="fa fa-star-half-full fa-2x"></i></li>     
-                </ul>
-               <p>- healthgrades.com</p>
-            </div>
+<div id="testimonials" class="container center">
+    <div class="row">
+        <h1>Testimonials</h1>
+        <hr>
+        <div class="col-xs-12 center test-quote">
+            <p>Dr. Brennan is my FAVORITE doctor. Period. I have been a patient for close to two decades.  Dr. Brennan has an excellent bedside manner --consistently courteous and professional. He is highly skilled and respected, as he has trained many other doctors and is a board certified formerly LICH affiliated doctor. He has been my primary care physician as well as my ob/gyn doctor.  He deserves more vacation as he is a workaholic, and is relentlessly willing to serve his patients.  He is blessed and has been a blessing to me many times.  Thank you Dr. Brennan!</p>
+            <p>Crystal P. - Yelp</p>
+        </div>
+        <br>
+        <div class="col-xs-12 center test-quote">
+            <p>Dr. Brennan and his wife, Jayce [sic], were absolutely amazing during my pregnancy and during and after the delivery of my baby. They are practical people who practice traditional medicine, with good sense, and both of them have a great sense of humor. They took time to listen to all our concerns and answered all our questions (and we had a lot as first-time parents).</p>
+            <p>User - Park Slope Parents</p>
+        </div>
+        <br>
+        <div class=" col-xs-12 center test-quote healthgrades">
+            <ul>
+                <li><i class="fa fa-star fa-2x"></i></li> 
+                <li><i class="fa fa-star fa-2x"></i></li>
+                <li><i class="fa fa-star fa-2x"></i></li>
+                <li><i class="fa fa-star fa-2x"></i></li>
+                <li><i class="fa fa-star-half-full fa-2x"></i></li>     
+            </ul>
+           <p>- healthgrades.com</p>
         </div>
     </div>
-</section><!-- testimonials ends -->  
+</div><!-- /#testimonials -->  
+
 
 
 
@@ -148,13 +148,15 @@
         </ul>
     </div>
     <br>       
-    <h3><a href="mailto:info@drb.nyc?Subject=Info%20Request">info@drb.nyc</a></h3>
+    <h3 class="email-link"><a href="mailto:info@drb.nyc?Subject=Info%20Request">info@drb.nyc</a></h3>
+</div><!-- /#contact -->
+
+
+
+<div id="map" class="center" name="contact">
+    <%= image_tag("gmap.jpg", :alt => "location-map", :class => "map") %>
+    <%= image_tag("gmap-mobile.jpg", :alt => "location-map-mobile", :class => "map-mobile") %>
 </div>
-
-
-
-<!-- map image -->
-<section id="map" class="divider center" name="contact"></section>
 
 
 
@@ -162,7 +164,6 @@
 <div class="copyright center">
     <div class="container">
         <h5>&copy 2015 <%= image_tag("drbnyc-logo.png", :alt => "logo", :class => "logo-footer") %></h5>
-        <!-- <h5>&copy; 2015 John Brennan LLC</h5> -->
     </div>
-</div><!-- copyright section ends -->
+</div><!-- /.copyright -->
 

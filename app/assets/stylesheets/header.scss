@@ -16,7 +16,7 @@
 }
 
 .header-wrap h1 {
-    font-size: 90px;
+    font-size: 75px;
     font-weight: bold;
     padding-bottom: 50px;
     margin-top: 170px;
@@ -35,7 +35,8 @@
 
 .header-wrap h3 {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 20px;
+    margin-top: 0;
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0,0,0, .4);
 }
@@ -49,7 +50,7 @@
     position: absolute;
     opacity: .8;
     top: 10px;
-    left: 40px;
+    left: 30px;
     width: 100px;
 }
 
@@ -81,7 +82,7 @@
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    background-color: #16a085;
+    background-color: #F54570;
     color: white;
 }
 
